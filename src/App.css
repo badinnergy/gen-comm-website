@@ -3,11 +3,11 @@
 }
 
 .navigation {
-    background-color: #00b7ce
+    background-color: #00b7ce;
 }
 
 .dropdown-item:hover {
-    background-color: #00b7ce
+    background-color: #00b7ce;
 }
 
 /* Optional color: #212529 */
@@ -22,10 +22,21 @@
 } */
 
 footer {
-    border-bottom: 5px solid #212529;
-    padding: 20px;
+    border-bottom: 20px solid #333333;
     background-color: #666666;
-    min-height: 50px;
+    /* min-height: 50px; */
     text-align: left;
-    margin-top: 10%;
+    margin-top: 5%;
+    color: #eaeaea;
+}
+
+.padded {
+    padding: 20px;
+}
+
+.copyright-footer {
+    text-align: center;
+    background-color: #333333;
+    position: relative;
+    top: 18px;
 }

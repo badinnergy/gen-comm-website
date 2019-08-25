@@ -1,2 +1,2 @@
-# gen-comm-website
-A general commercial website
+# ikram-website-in-react
+Reimplementing IKRAM's website in Reactjs (cause why not?)

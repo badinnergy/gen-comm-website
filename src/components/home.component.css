@@ -1,7 +1,47 @@
+.baris-pertama {
+    margin-top: 1%;
+}
+
+.baris-kedua {
+    margin-top: 3%;
+}
+
+.reduced-height {
+    height: 30%;
+}
+
 .subheaders {
-    margin: 3%;
-    text-align: center;
-    /* border: 2px solid #00b7ce; */
+    color: #00b7ce;
+    border-top: 2px solid #00b7ce;
+}
+
+.spaced {
+    margin-top: 5%;
+}
+
+.smallheaders {
+    color: #00b7ce;
+    border-top: 2px solid #00b7ce;
+}
+
+.imejPautan {
+    width: 100%;
+    margin: 1%;
+}
+
+.mini-nav {
+    position: relative;
+    top: 20px;
+}
+
+.imejHebahan {
+    width: 100%;
+    height: 90%;
+    transition: transform .2s;
+}
+
+.imejHebahan:hover {
+    transform: scale(1.2);
 }
 
 * {box-sizing: border-box}
@@ -10,9 +50,10 @@
     position: relative;
     width: 100%;
     max-width: 300px;
+    margin-top: 1%;
 }
 
-.imej {
+.imejCapaian {
     display: block;
     width: 100%;
     height: auto;
@@ -37,7 +78,44 @@
     opacity: 1;
 }
 
-.instLogo {
-    width: 50%;
-    height: 100%;
+.spacer {
+    padding: 20px;
 }
+
+.instLogo {
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform .2s;
+}
+
+.instLogo:hover {
+    transform: scale(1.3);
+}
+
+.agenLogo1 {
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform .2s;
+}
+
+.agenLogo1:hover {
+    transform: scale(1.3);
+}
+
+.agenLogo2 {
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform .2s;
+}
+
+.agenLogo2:hover {
+    transform: scale(1.3);
+}
+

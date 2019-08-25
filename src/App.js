@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 // Our own component
 import HomePage from './components/home.component'
+import PerlembagaanPage from './components/perlembagaan.component'
+import HubungiPage from './components/hubungi.component'
 
 // Material UI
 import HomeIcon from '@material-ui/icons/Home'
@@ -66,7 +68,7 @@ class App extends Component {
                                         <a className="dropdown-item" href="#">Presiden Berbicara</a>
                                     </div>
                                 </li>
-                                <li className="navbar-item active">
+                                <li className="navbar-item">
                                     <Link to="/perlembagaan" className="nav-link">Perlembagaan</Link>
                                 </li>
                                 <li className="navbar-item dropdown">
@@ -127,33 +129,47 @@ class App extends Component {
                                         <a className="dropdown-item" href="#">Sabah</a>
                                     </div>
                                 </li>
-                                <li className="navbar-item active">
+                                <li className="navbar-item">
                                     <Link to="/hubungi" className="nav-link">Hubungi Kami</Link>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                     <Route path="/" exact component={HomePage} />
-                    <Route path="/berita" component={HomePage} />
-                    <Route path="/perlembagaan" component={HomePage} />
-                    <Route path="/hubungi" component={HomePage} />
+                    <Route path="/perlembagaan" component={PerlembagaanPage} />
+                    <Route path="/hubungi" component={HubungiPage} />
                 </div>
                 <footer>
-                    <div className="container">
+                    <div className="container padded">
                         <div className="row">
                             <div className="col-sm">
                                 <h3>Pertubuhan IKRAM Malaysia</h3>
+                                <p>Pertubuhan IKRAM Malaysia (IKRAM) yang didaftarkan pada 22 Oktober 2009 adalah pertubuhan dakwah, tarbiah dan kebajikan yang prihatin terhadap urusan-urusan kehidupan masyarakat umum sejajar dengan ajaran dan cara hidup Islam. IKRAM berusaha untuk menegakkan syariat Islam di Malaysia sebagai rahmat kepada seluruh alam.</p>
                             </div>
                             <div className="col-sm">
                                 <h3>Facebook</h3>
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fikram.malaysia%2F&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style={{border:"none", overflow:"hidden"}} scrolling="no" frameborder="0" data-show-facepile="true"></iframe>
                             </div>
                             <div className="col-sm">
                                 <h3>IKRAM TV</h3>
+                                {/* <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIKRAMAustralia%2F&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style={{border:"none", overflow:"hidden"}} scrolling="no" frameborder="0" data-show-facepile="true"></iframe> */}
                             </div>
                             <div className="col-sm">
                                 <h3>Hubungi Kami</h3>
+                                <h6>Pertubuhan IKRAM Malaysia (IKRAM)</h6>
+                                <p>No. 6, Jalan Dagang SB 4/1, Taman Sungai Besi Indah, 43300 Seri Kembangan, Selangor Darul Ehsan, MALAYSIA</p>
+                                <p>Tel: +603-8945 6999, +603-8945 3666</p>
+                                <p>Fax: +603-8945 1772</p>
+                                <h6>Emel</h6>
+                                <p>Umum: info@ikram.org.my</p>
+                                <p>Pentadbiran: pentadbiran@ikram.org.my</p>
+                                <p>Keahlian: keahlian@ikram.org.my</p>
+                                <p>Kewangan: kewangan@ikram.org.my</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="copyright-footer">
+                        <p>All Rights Reserved. Designed by <a href="https://badinnergy.github.io/">badinnergy.github.io</a></p>
                     </div>
                 </footer>
             </Router>

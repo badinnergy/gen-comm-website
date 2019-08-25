@@ -2,6 +2,7 @@ import React from 'react'
 
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./carousel.component.css"
 
 const img1 = "http://ikram.org.my/images/BELIA/imfc-sspl2.jpg"
 const img2 = "http://ikram.org.my/images/MyCARE3/aqsapedia.jpg"
@@ -20,29 +21,29 @@ export default function Carousel() {
                 </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={img1} className="d-block w-100 carousel-img" alt="hasan" />
-                        <div className="carousel-caption d-none d-md-block">
+                        <img src={img1} className="d-block w-100 carousel-img" alt="imfc" />
+                        <div className="carousel-caption d-none d-md-block fake-overlay">
                             <h5>IKRAM MUDA FC MUNCUL JUARA LIGA</h5>
                             <p>KUALA LUMPUR - IKRAM Muda FC (IMFC) berjaya menjulang trofi pertama dalam sejarah apabila menjadi juara liga Selangor Social Premier League (SSPL) Divisyen 2.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img2} className="d-block w-100 carousel-img" alt="yusuf" />
-                        <div className="carousel-caption d-none d-md-block">
+                        <img src={img2} className="d-block w-100 carousel-img" alt="aqsapedia" />
+                        <div className="carousel-caption d-none d-md-block fake-overlay">
                             <h5>ENSIKLOPEDIA MASJID AL-AQSA DALAM TALIAN PERTAMA DI DUNIA DILANCARKAN</h5>
-                            <p>KUALA LUMPUR - Ensiklopedia dalam talian mengenai Masjid Al-Aqsa yang pertama di dunia, 'Aqsapedia' telah dilancarkan oleh Pengerusi Lembaga Pemegang Amanah Yayasan Al-Quds Malaysia (QFM), Datuk Seri Mukhriz Tun Dr Mahathir.</p>
+                            <p>KUALA LUMPUR - Ensiklopedia dalam talian mengenai Masjid Al-Aqsa yang pertama di dunia, 'Aqsapedia' telah dilancarkan oleh Pengerusi Lembaga Pemegang Amanah Yayasan Al-Quds Malaysia (QFM), Datuk Seri Mukhriz Tun Mahathir semalam.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img3} className="d-block w-100 carousel-img" alt="morsi" />
-                        <div className="carousel-caption d-none d-md-block">
+                        <img src={img3} className="d-block w-100 carousel-img" alt="gbm" />
+                        <div className="carousel-caption d-none d-md-block fake-overlay">
                             <h5>GBM LANCAR TABUNG KUKUH PERPADUAN NASIONAL</h5>
                             <p>KUALA LUMPUR - Gabungan Bertindak Malaysia (GBM) yang merupakan gabungan 27 pertubuhan bukan kerajaan (NGO) pelbagai kaum dan agama telah melancarkan tabung khusus untuk aktiviti mengukuhkan perpaduan nasional.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img4} className="d-block w-100 carousel-img" alt="morsi" />
-                        <div className="carousel-caption d-none d-md-block">
+                        <img src={img4} className="d-block w-100 carousel-img" alt="universiti" />
+                        <div className="carousel-caption d-none d-md-block fake-overlay">
                             <h5>UNIVERSITI CHINA LAWAT IKRAM</h5>
                             <p>SERI KEMBANGAN - Sekumpulan pensyarah dan mahasiswa dari Shanghai Jiao Tong University (SJTU), China telah melawat Ibu Pejabat IKRAM Malaysia (IKRAM) pada Selasa lalu.</p>
                         </div>
