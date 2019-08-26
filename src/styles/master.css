@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 1016px) {
     .banner {
         width: 100%;
     }
@@ -166,7 +166,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1016px) {
     .navigation, .banner, .carousel, .baris-pertama, .baris-kedua, footer {
         display: none;
     }
