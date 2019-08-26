@@ -4,6 +4,7 @@ export default function HubungiPage() {
     return (
         <div>
             <h1>Pertubuhan IKRAM Malaysia (IKRAM)</h1>
+            <h3>Hubungi kami!</h3>
             <form>
                 <div className="form-group">
                     <label>Name:</label>

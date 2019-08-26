@@ -4,7 +4,26 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 // Our own component
 import HomePage from './components/home.component'
+import BeritaPage from './components/berita.component'
+import KenyataanMediaPage from './components/kenyataan-media.component'
+import IkramDalamBeritaPage from './components/ikram-dalam-berita.component'
+import BakimPage from './components/bakim.component'
+import PengenalanPage from './components/pengenalan.component'
+import JKPPage from './components/jawatan-kuasa-pusat.component'
+import WanitaPusatPage from './components/jawatan-kuasa-wanita-pusat.component'
+import DPNPage from './components/dpn.component'
+import PresidenBerbicaraPage from './components/presiden-berbicara.component'
 import PerlembagaanPage from './components/perlembagaan.component'
+import BorangAhliPage from './components/borang-ahli.component'
+import BorangKawasanPage from './components/borang-kawasan.component'
+import HakKewajipanAhliPage from './components/hak-kewajipan-ahli.component'
+import DakwahHarakahPage from './components/dakwah-harakah.component'
+import ImanIbadahPage from './components/iman-ibadah.component'
+import AkhlakBudiPage from './components/akhlak-budi.component'
+import TarbiatunaPage from './components/tarbiatuna.component'
+import RisalahTarbiahPage from './components/risalah-tarbiah.component'
+import CapaianPage from './components/capaian.component'
+import NegeriPage from './components/negeri.component.js'
 import HubungiPage from './components/hubungi.component'
 
 // Material UI
@@ -17,7 +36,7 @@ import "./App.css"
 const banner_url = "http://ikram.org.my/images/Header-banner.jpg"
 
 const navButtons = () => {
-    const navLinks = ["berita", "kepemimpinan", "keahlian", "tarbiah", "capaian", "negeri"];
+    const navLinks = ["berita", "kepemimpinan", "keahlian", "tarbiah"];
 
     navLinks.map(item => {
         return (
@@ -51,9 +70,9 @@ class App extends Component {
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <Link to="/berita" className="dropdown-item">Berita</Link>
-                                        <a className="dropdown-item" href="#">Kenyataan Media</a>
-                                        <a className="dropdown-item" href="#">IKRAM Dalam Berita</a>
-                                        <a className="dropdown-item" href="#">BAKIM</a>
+                                        <Link to="/kenyataan-media" className="dropdown-item">Kenyataan Media</Link>
+                                        <Link to="/ikram-dalam-berita" className="dropdown-item">IKRAM Dalam Berita</Link>
+                                        <Link to="/bakim" className="dropdown-item">BAKIM</Link>
                                     </div>
                                 </li>
                                 <li className="navbar-item dropdown">
@@ -61,11 +80,11 @@ class App extends Component {
                                         Kepemimpinan
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Pengenalan</a>
-                                        <a className="dropdown-item" href="#">Jawatan Kuasa Pusat</a>
-                                        <a className="dropdown-item" href="#">Jawatan Kuasa Wanita Pusat</a>
-                                        <a className="dropdown-item" href="#">Dewan Perwakilan Nasional</a>
-                                        <a className="dropdown-item" href="#">Presiden Berbicara</a>
+                                        <Link to="/pengenalan" className="dropdown-item">Pengenalan</Link>
+                                        <Link to="/jk-pusat" className="dropdown-item">JK Pusat</Link>
+                                        <Link to="/jk-wanita-pusat" className="dropdown-item">JK Wanita Pusat</Link>
+                                        <Link to="/dpn" className="dropdown-item">Dewan Perwakilan Nasional</Link>
+                                        <Link to="/presiden-berbicara" className="dropdown-item">Presiden Berbicara</Link>
                                     </div>
                                 </li>
                                 <li className="navbar-item">
@@ -76,11 +95,11 @@ class App extends Component {
                                         Keahlian
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Borang</a>
-                                        <a className="dropdown-item" href="#">Borang Tukar Kawasan</a>
-                                        <a className="dropdown-item" href="#">Permohonan Keahlian Online</a>
-                                        <a className="dropdown-item" href="#">Permohonan Tukar Kawasan Online</a>
-                                        <a className="dropdown-item" href="#">Hak dan Kewajipan Ahli</a>
+                                        <Link to="/borang-ahli" className="dropdown-item">Borang Ahli</Link>
+                                        <Link to="/borang-kawasan" className="dropdown-item">Borang Kawasan</Link>
+                                        <a href="http://www.ikram.org.my/reg/" className="dropdown-item">Permohonan Keahlian Online</a>
+                                        <a href="http://www.ikram.org.my/reg/member_applytransfer.php" className="dropdown-item">Permohonan Tukar Kawasan Online</a>
+                                        <Link to="hak-kewajipan-ahli" className="dropdown-item">Hak dan Kewajipan Ahli</Link>
                                     </div>
                                 </li>
                                 <li className="navbar-item dropdown">
@@ -88,46 +107,18 @@ class App extends Component {
                                         Tarbiah
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Dakwah & Harakah</a>
-                                        <a className="dropdown-item" href="#">Iman & Ibadah</a>
-                                        <a className="dropdown-item" href="#">Akhlak & Budi Pekerti</a>
-                                        <a className="dropdown-item" href="#">Tarbiatuna</a>
-                                        <a className="dropdown-item" href="#">Risalah Tarbiah</a>
+                                        <Link to="dakwah-harakah" className="dropdown-item">Dakwah & Harakah</Link>
+                                        <Link to="iman-ibadah" className="dropdown-item">Iman & Ibadah</Link>
+                                        <Link to="akhlak-budi" className="dropdown-item">Akhlak & Budi Pekerti</Link>
+                                        <Link to="tarbiatuna" className="dropdown-item">Tarbiatuna</Link>
+                                        <Link to="risalah-tarbiah" className="dropdown-item">Risalah Tarbiah</Link>
                                     </div>
                                 </li>
-                                <li className="navbar-item dropdown">
-                                    <a href="#" className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                                        Capaian
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Wanita IKRAM</a>
-                                        <a className="dropdown-item" href="#">Institusi IKRAM</a>
-                                        <a className="dropdown-item" href="#">Agensi IKRAM</a>
-                                        <a className="dropdown-item" href="#">Sekolah-Sekolah MUSLEH</a>
-                                        <a className="dropdown-item" href="#">Facebook</a>
-                                        <a className="dropdown-item" href="#">IKRAM Luar Negara</a>
-                                        <a className="dropdown-item" href="#">Galeri Gambar</a>
-                                    </div>
+                                <li className="navbar-item">
+                                    <Link to="/capaian" className="nav-link">Capaian</Link>
                                 </li>
-                                <li className="navbar-item dropdown">
-                                    <a href="#" className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                                        Negeri
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Perlis</a>
-                                        <a className="dropdown-item" href="#">Wilayah Persekutuan</a>
-                                        <a className="dropdown-item" href="#">Perak</a>
-                                        <a className="dropdown-item" href="#">Terengganu</a>
-                                        <a className="dropdown-item" href="#">Negeri Sembilan</a>
-                                        <a className="dropdown-item" href="#">Kedah</a>
-                                        <a className="dropdown-item" href="#">Johor</a>
-                                        <a className="dropdown-item" href="#">Pahang</a>
-                                        <a className="dropdown-item" href="#">Kelantan</a>
-                                        <a className="dropdown-item" href="#">Selangor</a>
-                                        <a className="dropdown-item" href="#">Melaka</a>
-                                        <a className="dropdown-item" href="#">Sarawak</a>
-                                        <a className="dropdown-item" href="#">Sabah</a>
-                                    </div>
+                                <li className="navbar-item">
+                                    <Link to="/negeri" className="nav-link">Negeri</Link>
                                 </li>
                                 <li className="navbar-item">
                                     <Link to="/hubungi" className="nav-link">Hubungi Kami</Link>
@@ -136,7 +127,26 @@ class App extends Component {
                         </div>
                     </nav>
                     <Route path="/" exact component={HomePage} />
+                    <Route path="/berita" component={BeritaPage} />
+                    <Route path="/kenyataan-media" component={KenyataanMediaPage} />
+                    <Route path="/ikram-dalam-berita" component={IkramDalamBeritaPage} />
+                    <Route path="/bakim" component={BakimPage} />
+                    <Route path="/pengenalan" component={PengenalanPage} />
+                    <Route path="/jk-pusat" component={JKPPage} />
+                    <Route path="/jk-wanita-pusat" component={WanitaPusatPage} />
+                    <Route path="/dpn" component={DPNPage} />
+                    <Route path="/presiden-berbicara" component={PresidenBerbicaraPage} />
+                    <Route path="/borang-ahli" component={BorangAhliPage} />
+                    <Route path="/borang-kawasan" component={BorangKawasanPage} />
+                    <Route path="/hak-kewajipan-ahli" component={HakKewajipanAhliPage} />
                     <Route path="/perlembagaan" component={PerlembagaanPage} />
+                    <Route path="/dakwah-harakah" component={DakwahHarakahPage} />
+                    <Route path="/iman-ibadah" component={ImanIbadahPage} />
+                    <Route path="/akhlak-budi" component={AkhlakBudiPage} />
+                    <Route path="/tarbiatuna" component={TarbiatunaPage} />
+                    <Route path="/risalah-tarbiah" component={RisalahTarbiahPage} />
+                    <Route path="/capaian" component={CapaianPage} />
+                    <Route path="/negeri" component={NegeriPage} />
                     <Route path="/hubungi" component={HubungiPage} />
                 </div>
                 <footer>
