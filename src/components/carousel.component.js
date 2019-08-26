@@ -2,7 +2,6 @@ import React from 'react'
 
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./carousel.component.css"
 
 const img1 = "http://ikram.org.my/images/BELIA/imfc-sspl2.jpg"
 const img2 = "http://ikram.org.my/images/MyCARE3/aqsapedia.jpg"

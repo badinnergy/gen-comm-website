@@ -31,7 +31,7 @@ import HomeIcon from '@material-ui/icons/Home'
 
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./App.css"
+import "./styles/master.css"
 
 const banner_url = "http://ikram.org.my/images/Header-banner.jpg"
 
@@ -57,6 +57,9 @@ class App extends Component {
             <Router>
                 <div className="container">
                     <img className="banner" src={banner_url} alt="banner" />
+                    <h1 className="mobile-only">Mohon Maaf!</h1>
+                    <p className="mobile-only">Laman web ini hanya boleh diakses melalui komputer atau laptop</p>
+                    <p className="mobile-only">Akses kepada telefon pintar akan keluar pada masa hadapan</p>
                     <nav className="navbar navbar-expand-lg navbar-light navigation">
                         { this.renderNavButtons() }
                         <div className="collapse navbar-collapse">

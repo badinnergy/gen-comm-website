@@ -4,9 +4,6 @@ import React, { Component } from 'react'
 // Our own component
 import Carousel from './carousel.component'
 
-// CSS
-import './home.component.css'
-
 // Images
 import komasya from '../images/komasya.jpeg'
 import tvIkram from '../images/tv.ikram.jpeg'
